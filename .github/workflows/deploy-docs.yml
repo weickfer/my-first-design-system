@@ -23,8 +23,8 @@ jobs:
 
       - run: npm run build
         env:
-          TURBO_TOKEN: hqVigknxqpDs4nrJ8CTt19dQ
-          TURBO_TEAM: weickfer
+          TURBO_TOKEN: Ei9pMj3cCkh6Tt99DbDklKK7
+          TURBO_TEAM: turborepo-design-system
 
       - name: Deploy Storybook
         working-directory: ./packages/docs
