@@ -23,7 +23,7 @@ jobs:
 
       - run: npm run build
         env:
-          TURBO_TOKEN: Ei9pMj3cCkh6Tt99DbDklKK7
+          TURBO_TOKEN: ${{ github.VERCEL_TOKEN }}
           TURBO_TEAM: turborepo-design-system
 
       - name: Deploy Storybook
