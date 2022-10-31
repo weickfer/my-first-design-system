@@ -5,7 +5,10 @@ type TokensGridProps = {
   hasRemValue?: boolean
 }
 
-export function TokensGrid({ tokens: _tokens, hasRemValue = false }: TokensGridProps) {
+export function TokensGrid({
+  tokens: _tokens,
+  hasRemValue = false,
+}: TokensGridProps) {
   const tokens = Object.entries(_tokens).map(([token, value]) => ({
     value,
     token,
@@ -23,17 +26,13 @@ export function TokensGrid({ tokens: _tokens, hasRemValue = false }: TokensGridP
       </thead>
 
       <tbody>
-        {
-          tokens.map(({ token, value, pixels }) => (
-            <tr key={token}>
-              <td>{token}</td>
-              <td>{value}</td>
-              {hasRemValue && (
-                <td>{pixels}px</td>
-              )}
-            </tr>
-          ))
-        }
+        {tokens.map(({ token, value, pixels }) => (
+          <tr key={token}>
+            <td>{token}</td>
+            <td>{value}</td>
+            {hasRemValue && <td>{pixels}px</td>}
+          </tr>
+        ))}
       </tbody>
     </table>
   )

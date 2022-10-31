@@ -5,19 +5,16 @@ export default {
   title: 'Form/Checkbox',
   component: Checkbox,
   args: {
-    placeholder: 'Write...'
+    placeholder: 'Write...',
   },
   decorators: [
     (Story) => (
-      <Box 
-        css={{ display: 'flex', flexDirection: 'row', gap: '$2', }} 
-      >
+      <Box css={{ display: 'flex', flexDirection: 'row', gap: '$2' }}>
         {Story()}
-        <Text size="sm" >Mark TO-DO</Text>
+        <Text size="sm">Mark TO-DO</Text>
       </Box>
-    )
-  ]
+    ),
+  ],
 } as Meta<CheckboxProps>
 
 export const Primary: StoryObj<CheckboxProps> = {}
-

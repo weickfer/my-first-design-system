@@ -1,6 +1,6 @@
 import { User } from 'phosphor-react'
-import { ComponentType } from 'react';
-import { AvatarContainer, AvatarFallback, AvatarImage } from "./styles";
+import { ComponentType } from 'react'
+import { AvatarContainer, AvatarFallback, AvatarImage } from './styles'
 
 export type AvatarProps = ComponentType<typeof AvatarImage>
 

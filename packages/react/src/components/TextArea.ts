@@ -1,5 +1,5 @@
-import { ComponentProps } from "react";
-import { styled } from "../styles/config";
+import { ComponentProps } from 'react'
+import { styled } from '../styles/config'
 
 export const TextArea = styled('textarea', {
   backgroundColor: '$gray900',
@@ -15,20 +15,19 @@ export const TextArea = styled('textarea', {
   resize: 'vertical',
   minHeight: 80,
 
-
   '&:focus': {
     outline: 0,
-    borderColor: '$ignite300'
+    borderColor: '$ignite300',
   },
   '&:disabled': {
     opacity: 0.5,
-    cursor: 'not-allowed,'
+    cursor: 'not-allowed,',
   },
   '&:placeholder': {
     color: '$gray400',
   },
 })
 
-export type TextAreaProps = ComponentProps<typeof TextArea>  
+export type TextAreaProps = ComponentProps<typeof TextArea>
 
 TextArea.displayName = 'TextArea'

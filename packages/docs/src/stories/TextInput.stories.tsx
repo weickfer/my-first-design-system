@@ -6,31 +6,31 @@ export default {
   component: TextInput,
   decorators: [
     (Story) => (
-      <Box 
+      <Box
         as="label"
-        css={{ display: 'flex', flexDirection: 'column', gap: '$2', }} 
+        css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
       >
-        <Text size="sm" >Type anything...</Text>
+        <Text size="sm">Type anything...</Text>
         {Story()}
       </Box>
-    )
-  ]
+    ),
+  ],
 } as Meta<TextInputProps>
 
 export const Primary: StoryObj<TextInputProps> = {
   args: {
-    placeholder: 'Type your Call ID'
-  }
+    placeholder: 'Type your Call ID',
+  },
 }
 
 export const Disabled: StoryObj<TextInputProps> = {
   args: {
     disabled: true,
-  }
+  },
 }
 
 export const WithPrefix: StoryObj<TextInputProps> = {
   args: {
-    prefix: 'call.io/'
-  }
+    prefix: 'call.io/',
+  },
 }

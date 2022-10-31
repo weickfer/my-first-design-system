@@ -24,14 +24,15 @@ export const CheckboxContainer = styled(Checkbox.Root, {
   },
 })
 
-const slide = (direction: 'in' | 'out') => keyframes({
-  from: {
-    transform: `translateY(${direction === 'in' ? '-100%' : '0'})`,
-  },
-  to: {
-    transform: `translateY(${direction === 'in' ? '0' : '-100%'})`,
-  },
-})
+const slide = (direction: 'in' | 'out') =>
+  keyframes({
+    from: {
+      transform: `translateY(${direction === 'in' ? '-100%' : '0'})`,
+    },
+    to: {
+      transform: `translateY(${direction === 'in' ? '0' : '-100%'})`,
+    },
+  })
 
 export const CheckboxIndicator = styled(Checkbox.Indicator, {
   color: '$white',
@@ -45,4 +46,3 @@ export const CheckboxIndicator = styled(Checkbox.Indicator, {
     animation: `${slide('out')} 200ms ease-out`,
   },
 })
-

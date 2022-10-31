@@ -3,10 +3,7 @@ import { getContrast } from 'polished'
 
 export function ColorsGrid() {
   return Object.entries(colors).map(([token, color]) => (
-    <div 
-      key={token}
-      style={{ backgroundColor: color, padding: '2rem' }}
-    >
+    <div key={token} style={{ backgroundColor: color, padding: '2rem' }}>
       <div
         style={{
           display: 'flex',

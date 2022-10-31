@@ -9,7 +9,7 @@ export default {
       <>
         <Text>Testing Box Element</Text>
       </>
-    )
+    ),
   },
   argTypes: {
     children: {

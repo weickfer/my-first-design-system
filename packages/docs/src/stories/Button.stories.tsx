@@ -30,9 +30,9 @@ export default {
       },
     },
     onClick: {
-      action: 'click'
-    }
-  }
+      action: 'click',
+    },
+  },
 } as Meta<ButtonProps>
 
 export const Primary: StoryObj<ButtonProps> = {}
@@ -48,30 +48,29 @@ export const WithIcon: StoryObj<ButtonProps> = {
     children: (
       <>
         Login
-        <SignIn weight='bold' />
+        <SignIn weight="bold" />
       </>
-    )
-  }
+    ),
+  },
 }
 
 export const Secondary: StoryObj<ButtonProps> = {
   args: {
     variant: 'secondary',
-    children: 'Create New'
-  }
+    children: 'Create New',
+  },
 }
 
 export const Tertiary: StoryObj<ButtonProps> = {
   args: {
     variant: 'tertiary',
-    children: 'Cancel'
-  }
+    children: 'Cancel',
+  },
 }
 
 export const Small: StoryObj<ButtonProps> = {
   args: {
     size: 'sm',
-    children: 'Send'
-  }
+    children: 'Send',
+  },
 }
-

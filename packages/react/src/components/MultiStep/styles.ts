@@ -1,12 +1,12 @@
-import { styled } from "../../styles/config";
-import { Text, TextProps } from "../Text";
+import { styled } from '../../styles/config'
+import { Text, TextProps } from '../Text'
 
 export const MultiStepContainer = styled('div', {})
 
 export const Label = styled(Text, {
   color: '$gray200',
 
-  defaultVariants: { size: 'xs' }
+  defaultVariants: { size: 'xs' },
 })
 
 export const StepGroup = styled('div', {
@@ -25,7 +25,7 @@ export const Step = styled('div', {
     active: {
       true: {
         backgroundColor: '$gray100',
-      }
-    }
+      },
+    },
   },
 })

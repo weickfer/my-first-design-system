@@ -1,5 +1,5 @@
 import { ComponentProps, ElementType } from 'react'
-import { styled } from "../styles/config";
+import { styled } from '../styles/config'
 
 export const Button = styled('button', {
   all: 'unset',
@@ -39,7 +39,7 @@ export const Button = styled('button', {
         },
 
         '&:disabled': {
-          backgroundColor: '$gray200'
+          backgroundColor: '$gray200',
         },
       },
       secondary: {
@@ -53,7 +53,7 @@ export const Button = styled('button', {
 
         '&:disabled': {
           color: '$gray200',
-          borderColor: '$gray200'
+          borderColor: '$gray200',
         },
       },
       tertiary: {
@@ -66,7 +66,7 @@ export const Button = styled('button', {
         '&:disabled': {
           color: '$gray600',
         },
-      }
+      },
     },
 
     size: {
@@ -75,17 +75,17 @@ export const Button = styled('button', {
       },
       md: {
         height: 48,
-      }
+      },
     },
   },
   defaultVariants: {
     variant: 'primary',
-    size: 'md'
-  }
+    size: 'md',
+  },
 })
 
 export type ButtonProps = ComponentProps<typeof Button> & {
   as?: ElementType
-} 
+}
 
 Button.displayName = 'Button'
