@@ -1,0 +1,2 @@
+import{A as t}from"./index.89d01e44.js";import"./index.686d180b.js";import"./iframe.5dd6a603.js";import"./index.1ecd42f2.js";import"./jsx-runtime.8995f483.js";const e={title:"Data display/Avatar",component:t,args:{src:"https://github.com/weickfer.png",alt:"Weickmam Ferreira"},argTypes:{src:{control:{type:"text"}}}},c={},m={args:{src:void 0}},p=["Primary","WithFallback"];export{c as Primary,m as WithFallback,p as __namedExportsOrder,e as default};
+//# sourceMappingURL=Avatar.stories.626f7435.js.map
